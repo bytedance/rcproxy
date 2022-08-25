@@ -1,5 +1,7 @@
 # rcproxy
-[![Build Status](https://travis-ci.org/collinmsn/rcproxy.svg)](https://travis-ci.org/collinmsn/rcproxy)
+[![Build Status](https://github.com/bytedance/rcproxy/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/bytedance/rcproxy/actions/workflows/go.yml?query=branch%3Amaster)
+[![codecov](https://codecov.io/gh/bytedance/rcproxy/branch/master/graph/badge.svg)](https://codecov.io/gh/bytedance/rcproxy)
+[![Go Report Card](https://goreportcard.com/badge/github.com/bytedance/rcproxy)](https://goreportcard.com/report/github.com/bytedance/rcproxy)
 ## Introduction
 
   RCProxy, short for Redis Cluster Proxy, is a redis proxy built on redis 3.0(see [redis cluster spec](http://redis.io/topics/cluster-spec "悬停显示")). It aims to be simple, robust and high performance. It caches the cluster topology and implements the MOVED and ASK redirection. Cluster topology is updated on backend server failure or MOVED redirection received. Client is totally transpanrent about the backend data migration.

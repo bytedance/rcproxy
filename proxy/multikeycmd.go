@@ -3,6 +3,7 @@ package proxy
 import (
 	"bufio"
 	"bytes"
+
 	"github.com/collinmsn/resp"
 	log "github.com/ngaut/logging"
 )

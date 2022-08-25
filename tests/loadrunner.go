@@ -1,10 +1,13 @@
 package main
 
-import "github.com/garyburd/redigo/redis"
-import "log"
-import "fmt"
-import "math/rand"
-import "runtime"
+import (
+	"fmt"
+	"log"
+	"math/rand"
+	"runtime"
+
+	"github.com/garyburd/redigo/redis"
+)
 
 var maxKeyNum = 10000000
 var numWriter = 100

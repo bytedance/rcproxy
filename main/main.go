@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/artyom/autoflags"
-	"github.com/collinmsn/rcproxy/proxy"
+	"github.com/bytedance/rcproxy/proxy"
 	log "github.com/ngaut/logging"
 )
 

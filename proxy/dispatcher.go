@@ -6,11 +6,12 @@ import (
 
 	"bufio"
 
+	"math/rand"
+	"strings"
+
 	"github.com/collinmsn/resp"
 	"github.com/fatih/pool"
 	log "github.com/ngaut/logging"
-	"math/rand"
-	"strings"
 )
 
 // dispatcher routes requests from all clients to the right backend
@@ -203,7 +204,7 @@ func (d *Dispatcher) doReload(server string) (slotInfos []*SlotInfo, err error) 
 	}()
 	_, err = conn.Write(REDIS_CMD_CLUSTER_SLOTS)
 	if err != nil {
-		log.Errorf("write cluster slots error", server, err)
+		log.Errorf("write cluster slots error, server=%s, err=%v", server, err)
 		return
 	}
 	r := bufio.NewReader(conn)
@@ -221,7 +222,7 @@ func (d *Dispatcher) doReload(server string) (slotInfos []*SlotInfo, err error) 
 	// filter slot info with cluster nodes information
 	_, err = conn.Write(REDIS_CMD_CLUSTER_NODES)
 	if err != nil {
-		log.Errorf("write cluster nodes error", server, err)
+		log.Errorf("write cluster nodes error, server=%s, err=%v", server, err)
 		return
 	}
 	r = bufio.NewReader(conn)

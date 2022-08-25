@@ -1,0 +1,10 @@
+github.com/artyom/autoflags v1.1.1 h1:8flRmpb7xpjLHFVcM+HN+cEEKLw+H5a2hABDbRvfG9A=
+github.com/artyom/autoflags v1.1.1/go.mod h1:Th9KgAVvFcYp7t8b//Pu21xHjExLpzr4SXCbwVbHL7Y=
+github.com/collinmsn/resp v0.0.0-20170602101652-4e07f2f79968 h1:yiydMfOiTdnsKfEObyHUOKhzxAf7FpguOg/f2qvVTu8=
+github.com/collinmsn/resp v0.0.0-20170602101652-4e07f2f79968/go.mod h1:bw27iMn2U3WMvG8AMjjAzuYN1yAUF7h0H68g+qT9TnU=
+github.com/fatih/pool v3.0.0+incompatible h1:3xXzI/t5o6aEU/R+xe7ed44CTw41lV3oB0gB5pNXS5U=
+github.com/fatih/pool v3.0.0+incompatible/go.mod h1:v+kkrv3f2oJ1P9NHaKArMYdTVtNCwfR0DlXwnhA2L4k=
+github.com/garyburd/redigo v1.6.3 h1:HCeeRluvAgMusMomi1+6Y5dmFOdYV/JzoRrrbFlkGIc=
+github.com/garyburd/redigo v1.6.3/go.mod h1:rTb6epsqigu3kYKBnaF028A7Tf/Aw5s0cqA47doKKqw=
+github.com/ngaut/logging v0.0.0-20150203141111-f98f5f4cd523 h1:b/FFSk1AJG72RwWkrUcP+mL1sPvVxIJKiIyYnaWDahg=
+github.com/ngaut/logging v0.0.0-20150203141111-f98f5f4cd523/go.mod h1:NZlbFJnimm33bW5O3VR5yncLuUQpuswIUN3J2s8q7Is=

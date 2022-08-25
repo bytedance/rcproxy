@@ -7,5 +7,5 @@ build-proxy:
 clean:
 	@rm -rf bin
 
-gotest:
-	go test ./proxy/... -race
+test:
+	go test -v ./proxy/... -race

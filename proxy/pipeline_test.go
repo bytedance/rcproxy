@@ -20,13 +20,13 @@ func TestPipelineResponseHeap(t *testing.T) {
 		}
 		heap.Push(&h, rsp)
 		if h.Len() != i+1 {
-			t.Error("expected len: %d, got: %d", i+1, h.Len())
+			t.Errorf("expected len: %d, got: %d", i+1, h.Len())
 		}
 	}
 	for i := 0; i < N; i++ {
 		min := h.Top()
 		if min.ctx.seq != int64(i) {
-			t.Error("expected heap min: %d, got: %d", i, min.ctx.seq)
+			t.Errorf("expected heap min: %d, got: %d", i, min.ctx.seq)
 		}
 		heap.Pop(&h)
 	}

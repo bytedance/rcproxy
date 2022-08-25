@@ -10,9 +10,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/fatih/pool"
-
 	"github.com/collinmsn/resp"
+	"github.com/fatih/pool"
 	log "github.com/ngaut/logging"
 )
 

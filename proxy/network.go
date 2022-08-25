@@ -1,9 +1,10 @@
 package proxy
 
 import (
-	log "github.com/ngaut/logging"
 	"net"
 	"sync"
+
+	log "github.com/ngaut/logging"
 )
 
 var localIP string
